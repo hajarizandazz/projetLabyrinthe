@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="465.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerMenu">
+   <children>
+      <ButtonBar layoutX="-12.0" prefHeight="40.0" prefWidth="200.0" />
+      <ImageView fitHeight="464.0" fitWidth="865.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Photoprojet/Capture%20d'écran%202024-06-10%20162756.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnJouer" layoutX="208.0" layoutY="354.0" mnemonicParsing="false" onAction="#handlePlayButtonAction" prefHeight="60.0" prefWidth="126.0" style="-fx-background-radius: 20;" text="Jouer" textFill="#060d08">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="btnRejouer" layoutX="372.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleReplayButtonActions" prefHeight="60.0" prefWidth="126.0" style="-fx-background-radius: 20;" text="Rejouer" textFill="#060d08">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="btnQuitter" layoutX="19.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleQuitButtonAction" prefHeight="32.0" prefWidth="70.0" style="-fx-background-radius: 20;" text="Quitter" textFill="#060d08">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInstructions" layoutX="598.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleInstructionsButtonAction" prefHeight="32.0" prefWidth="118.0" style="-fx-background-radius: 20;" text="Régles du jeux" textFill="#060d08">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
